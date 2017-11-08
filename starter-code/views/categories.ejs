@@ -1,3 +1,9 @@
-  <body>
-    <h1>Categories</h1>
-  </body>
+<h1>Categories</h1>
+<!-- <pre> <%= JSON.stringify(response, 2, null) %> <pre> -->
+<ul>
+  <% response.forEach((joke) => { %>
+    <li>
+      <%= joke %>
+    </li>
+    })%>
+</ul>
